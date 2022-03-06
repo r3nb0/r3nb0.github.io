@@ -1,8 +1,10 @@
 content {
-    margin-left: 5%;
-    margin-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }

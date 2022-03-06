@@ -1,73 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" 
-    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Google Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        "use strict";
+        var tooltipTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        );
+        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+          new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+      })();
+    </script>
 
     <title>r3nb0's portfolio website</title>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
-    crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-    <section class="row h-100">
-        <div class="col-xs-12 col-md-3 col-lg-3 bg-primary">
-            <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
-                <a href="/" class="d-block p-3 link-dark text-decoration-none" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Icon-only">
-                  <svg class="bi" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-                  <span class="visually-hidden">Icon-only</span>
-                </a>
-                <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-                  <li class="nav-item">
-                    <a href="#" class="nav-link active py-3 border-bottom" aria-current="page" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Home">
-                      <svg class="bi" width="24" height="24" role="img" aria-label="Home"><use xlink:href="#home"></use></svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Dashboard">
-                      <svg class="bi" width="24" height="24" role="img" aria-label="Dashboard"><use xlink:href="#speedometer2"></use></svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Orders">
-                      <svg class="bi" width="24" height="24" role="img" aria-label="Orders"><use xlink:href="#table"></use></svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
-                      <svg class="bi" width="24" height="24" role="img" aria-label="Products"><use xlink:href="#grid"></use></svg>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="nav-link py-3 border-bottom" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Customers">
-                      <svg class="bi" width="24" height="24" role="img" aria-label="Customers"><use xlink:href="#people-circle"></use></svg>
-                    </a>
-                  </li>
-                </ul>
-                <div class="dropdown border-top">
-                  <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" id="dropdownUser3" data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
-                  </a>
-                  <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser3">
-                    <li><a class="dropdown-item" href="#">New project...</a></li>
-                    <li><a class="dropdown-item" href="#">Settings</a></li>
-                    <li><a class="dropdown-item" href="#">Profile</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-                  </ul>
-                </div>
+    <section>
+      <div class="row bg-dark" style="height: 100vh">
+        <div
+          class="d-flex flex-column flex-shrink-0 bg-light"
+          style="width: 7%; height: inherit"
+        >
+          <a
+            href="/"
+            class="d-block p-3 link-dark text-decoration-none"
+            title=""
+            data-bs-toggle="tooltip"
+            data-bs-placement="right"
+            data-bs-original-title="Home"
+          >
+            <span class="material-icons m-auto p-auto">home</span>
+            <span class="visually-hidden">Portfolio home</span>
+          </a>
+          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+            <li class="nav-item my-4"></li>
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom"
+                title=""
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                data-bs-original-title="Projects"
+                onclick="makeActive(this)"
+              >
+                <span
+                  class="material-icons text-dark"
+                  style="width: 48px; height: auto"
+                >
+                  biotech
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom"
+                title=""
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                data-bs-original-title="About me"
+                onclick="makeActive(this)"
+              >
+                <span
+                  class="material-icons text-dark"
+                  style="width: 48px; height: auto"
+                >
+                  article
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom"
+                title=""
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                data-bs-original-title="Education"
+                onclick="makeActive(this)"
+              >
+                <span
+                  class="material-icons text-dark"
+                  style="width: 48px; height: auto"
+                >
+                  school
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav-link py-3 border-bottom"
+                title=""
+                data-bs-toggle="tooltip"
+                data-bs-placement="right"
+                data-bs-original-title="Interests"
+                onclick="makeActive(this)"
+              >
+                <span
+                  class="material-icons text-dark"
+                  style="width: 48px; height: auto"
+                >
+                  tips_and_updates
+                </span>
+              </a>
+            </li>
+          </ul>
+          <div style="position: absolute; bottom: 0">
+            <blockquote class="text-muted">Made with love</blockquote>
+          </div>
+        </div>
+        <div
+          class="d-flex text-center"
+          style="width: 93%; height: inherit; color: #fefefe"
+        >
+          <div class="row">
+            <div class="col-12 p-3 m-4 mx-auto text-center">
+              <h1>Boren Dujnić</h1>
+              <h2>bacc. comp. ing.</h2>
+            </div>
+
+            <div class="col-12 row">
+              <div class="col-3">
+                <h3>Cascadus web shop</h3>
               </div>
+              <div class="col-9">
+                <img
+                  src="https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
+                />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-xs-12 col-md-3 col-lg-3 bg-light">
-            aas
-        </div>
+      </div>
     </section>
-</body>
+  </body>
 </html>
