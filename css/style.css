@@ -6,5 +6,53 @@ content {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-y: scroll;
+}
+
+.toTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 99;
+  font-size: 2rem;
+  background-color: #072227;
+  color: #35858b;
+  cursor: pointer;
+  border: 1px solid #4fbdba;
+  border-radius: 50px;
+
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+.toTop :hover {
+  color: #4fbdba;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.my-nav-link {
+  color: #aaa !important;
+}
+.my-nav-link :hover {
+  color: #fefefe !important;
+}
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.contact-tile {
+  height: 500px;
 }

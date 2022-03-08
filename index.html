@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -8,162 +9,204 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
 
     <!-- Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 
     <!-- Google Icons -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <script>
-      (function () {
-        "use strict";
-        var tooltipTriggerList = [].slice.call(
-          document.querySelectorAll('[data-bs-toggle="tooltip"]')
-        );
-        tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-          new bootstrap.Tooltip(tooltipTriggerEl);
-        });
-      })();
-    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <link href="./css/style.css" rel="stylesheet" />
 
     <title>r3nb0's portfolio website</title>
-  </head>
-  <body>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+</head>
 
-    <section>
-      <div class="row bg-dark" style="height: 100vh">
-        <div
-          class="d-flex flex-column flex-shrink-0 bg-light"
-          style="width: 7%; height: inherit"
-        >
-          <a
-            href="/"
-            class="d-block p-3 link-dark text-decoration-none"
-            title=""
-            data-bs-toggle="tooltip"
-            data-bs-placement="right"
-            data-bs-original-title="Home"
-          >
-            <span class="material-icons m-auto p-auto">home</span>
-            <span class="visually-hidden">Portfolio home</span>
-          </a>
-          <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-            <li class="nav-item my-4"></li>
-            <li>
-              <a
-                href="#"
-                class="nav-link py-3 border-bottom"
-                title=""
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-original-title="Projects"
-                onclick="makeActive(this)"
-              >
-                <span
-                  class="material-icons text-dark"
-                  style="width: 48px; height: auto"
-                >
-                  biotech
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav-link py-3 border-bottom"
-                title=""
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-original-title="About me"
-                onclick="makeActive(this)"
-              >
-                <span
-                  class="material-icons text-dark"
-                  style="width: 48px; height: auto"
-                >
-                  article
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav-link py-3 border-bottom"
-                title=""
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-original-title="Education"
-                onclick="makeActive(this)"
-              >
-                <span
-                  class="material-icons text-dark"
-                  style="width: 48px; height: auto"
-                >
-                  school
-                </span>
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                class="nav-link py-3 border-bottom"
-                title=""
-                data-bs-toggle="tooltip"
-                data-bs-placement="right"
-                data-bs-original-title="Interests"
-                onclick="makeActive(this)"
-              >
-                <span
-                  class="material-icons text-dark"
-                  style="width: 48px; height: auto"
-                >
-                  tips_and_updates
-                </span>
-              </a>
-            </li>
-          </ul>
-          <div style="position: absolute; bottom: 0">
-            <blockquote class="text-muted">Made with love</blockquote>
-          </div>
+<body class="m-0 p-0 bg-dark">
+    <div class="row m-0 p-0 justify-content-around" style="min-height: 95vh;">
+        <div class="d-block d-md-none col-12 m-0 p-0">
+            <nav class="px-3 py-2 bg-dark text-white">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="#start"
+                            class="nav-link text-white p-auto m-auto d-flex flex-column justify-content-center">
+                            <hh3 class="bi bi-house mx-auto"></hh3>
+                            <p class="text-muted">Home</p>
+                        </a>
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a href="#projects"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-diagram-2 mx-auto"></h3>
+                                    <p class="">Projects</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#skills"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-tools mx-auto"></h3>
+                                    <p class="">Skills</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-person mx-auto"></h3>
+                                    <p class="">About Me</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-telephone mx-auto"></h3>
+                                    <p class="">Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-        <div
-          class="d-flex text-center"
-          style="width: 93%; height: inherit; color: #fefefe"
-        >
-          <div class="row">
-            <div class="col-12 p-3 m-4 mx-auto text-center">
-              <h1>Boren Dujnić</h1>
-              <h2>bacc. comp. ing.</h2>
-            </div>
+        <div class="d-none d-md-block col-0 col-1 h-100 m-0 p-0">
+            <nav id="navbar-desktop"
+                class="navbar navbar-dark bg-dark nav nav-pills nav-flush flex-column mb-auto text-center px-auto mx-auto"
+                style="position: fixed; left: 0px; top: 0px; height: 100vh; width: 8.33vw;">
 
-            <div class="col-12 row">
-              <div class="col-3">
-                <h3>Cascadus web shop</h3>
-              </div>
-              <div class="col-9">
-                <img
-                  src="https://i.picsum.photos/id/866/200/300.jpg?hmac=rcadCENKh4rD6MAp6V_ma-AyWv641M4iiOpe1RyFHeI"
-                />
-              </div>
-            </div>
-          </div>
+                <a href="#home" class="nav-link py-3 pb-3 active px-5 my-1 my-nav-link" title="Start"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Start">
+                    <h1 class="bi bi-house mx-auto"></h1>
+                    <span class="visually-hidden">Icon-only</span>
+
+                </a>
+                <a href="#start" class="nav-link py-3 pb-3 border-bottom border-primary px-5 my-nav-link" title="Start"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Start">
+                    <h2 class="bi bi-easel mx-auto"></h2>
+                    <p class="lead">Intro</p>
+
+                </a>
+
+                <a href="#projects" class="nav-link py-3 border-bottom border-primary px-5 my-nav-link" title="Project"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Project">
+                    <h2 class="bi bi-diagram-3 mx-auto"></h2>
+                    <p class="lead">Project</p>
+
+                </a>
+
+                <a href="#skills" class="nav-link py-3 border-bottom border-primary px-5 my-nav-link" title="Skills"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Skills">
+                    <h2 class="bi bi-tools mx-auto"></h2>
+                    <p class="lead">Skills</p>
+                </a>
+
+                <a href="#about" class="nav-link py-3 border-bottom border-primary px-5 my-nav-link" title="About me"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="About me">
+                    <h2 class="bi bi-person mx-auto"></h2>
+                    <p class="lead">About me</p>
+                </a>
+                <a href="#contact" class="nav-link py-3 px-5 my-nav-link" title="Contact" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-original-title="Contact">
+                    <h2 class="bi bi-telephone mx-auto"></h2>
+                    <p class="lead">Contact</p>
+                </a>
+            </nav>
         </div>
-      </div>
-    </section>
-  </body>
+
+        <main class="col-11 m-0 p-0 text-white shwdow shadow-sm">
+            <div class="" data-spy="scroll" data-target="#navbar-desktop" data-offset="0">
+
+                <div id="home" class="text-center p-4 m-1" style="border: 1px solid pink; min-height: 50vh;">
+                    <h3>Long story short...</h3>
+
+                </div>
+                <div id="start" class="text-center p-4 m-1" style="border: 1px solid red; min-height: 50vh;">
+                    <h3>Beginning of my journey</h3>
+
+                </div>
+                <div id="projects" class="text-center p-4 m-1" style="border: 1px solid blue; min-height: 50vh;">
+                    <h3>My projects</h3>
+
+                </div>
+                <div id="skills" class="text-center p-4 m-1" style="border: 1px solid green; min-height: 50vh;">
+                    <h3>Skills</h3>
+
+                </div>
+                <div id="about" class="text-center p-4 m-1" style="border: 1px solid orangered; min-height: 90vh;">
+                    <h3>About me</h3>
+
+                </div>
+                <div id="contact" class="text-center p-4 m-1" style="border: 1px solid blueviolet; min-height: 90vh;">
+                    <h3>Contact</h3>
+                    <div class="row justify-content-around">
+                        <div class="col m-4">
+                            <div
+                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
+                                <h1 class="bi bi-mailbox">
+                                    </h2>
+                                    <p class="lead">Send me an email</p>
+                            </div>
+                        </div>
+
+                        <div class="col m-4">
+                            <div
+                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
+                                <h1 class="bi bi-telegram">
+                                    </h2>
+                                    <p class="lead">Send telegram message</p>
+                            </div>
+                        </div>
+                        <div class="w-100 d-md-block d-none"></div>
+                        <div class="col m-4">
+                            <div
+                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
+                                <h1 class="bi bi-whatsapp"></h1>
+                                <p class="lead">Send whatsapp message</p>
+                            </div>
+                        </div>
+                        <div class="col m-4">
+                            <div
+                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
+                                <h1 class="bi bi-phone"></h1>
+                                <p class="lead">Call me</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <button onclick="topFunction()" id="scrollToTopBtn" class="toTop">
+        <b class="bi bi-arrow-bar-up"></b>
+    </button>
+    <footer class="w-100 bg-dark text-center m-0 p-0 bottom-0">
+        <p class="bottom-0 text-muted">Made with
+            <i class="bi bi-heart mx-auto" style="color: red;"></i>
+            by Boren
+        </p>
+    </footer>
+
+
+    <script>
+        mybutton = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
 </html>
