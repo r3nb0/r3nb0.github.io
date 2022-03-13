@@ -18,6 +18,10 @@
 
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap"
+        rel="stylesheet" />
 
     <link href="./css/style.css" rel="stylesheet" />
 
@@ -69,7 +73,7 @@
                 </div>
             </nav>
         </div>
-        <div class="d-none d-md-block col-0 col-1 h-100 m-0 p-0">
+        <div class="d-none d-md-block col-0 col-md-3 h-100 m-0 p-0">
             <nav id="navbar-desktop"
                 class="navbar navbar-dark bg-dark nav nav-pills nav-flush flex-column mb-auto text-center px-auto mx-auto"
                 style="position: fixed; left: 0px; top: 0px; height: 100vh; width: 8.33vw;">
@@ -113,73 +117,97 @@
             </nav>
         </div>
 
-        <main class="col-11 m-0 p-0 text-white shwdow shadow-sm">
+        <main class="col-9 m-0 p-0 text-white shwdow shadow-sm">
             <div class="" data-spy="scroll" data-target="#navbar-desktop" data-offset="0">
 
-                <div id="home" class="text-center p-4 m-1 row" style="border: 1px solid pink; min-height: 100vh; 
-                
-  background-image:
-    linear-gradient(to bottom, #072227,#35858B);">
+                <div id="home" class="text-center p-2 m-0 row home-tile" style="min-height: 100vh;">
                     <div class="col-12 col-md-4 justify-content-center align-items-center my-auto">
-                        <img src="/assets/me.jpg" class="thumbnail rounded img img-responsive" />
+                        <img src="/assets/me.jpg" style="width: auto; height: 25vh; border-radius: 5rem;"
+                            class="thumbnail rounded img img-responsive" />
                     </div>
                     <div class="col-12 col-md-8 justify-content-center align-items-center my-auto">
                         <h2>Hi, my name is Boren, as you can already guess.</h2>
-                        <p>Welsome to my portfolio page where You will be able to look at some of my projects, see what
+                        <p class="lead">Welcome to my portfolio page where You will be able to look at some of my
+                            projects, see what
                             i'm capable of and learn something about me.</p>
                     </div>
-
                 </div>
-                <div id="start" class="text-center p-4 m-1" style="border: 1px solid red; min-height: 50vh;">
-                    <h3>Beginning of my journey</h3>
 
+
+                <div id="start" class="text-center p-2 m-0 row beginning-tile" style="min-height: 55vh;">
+                    <div class="col-12 col-md-6 justify-content-center align-items-center text-start my-auto">
+                        <p class="lead mx-auto">My journey has started since I was in middle school
+                            while playing minecraft. If
+                            you've ever heard of or played with "redstone",
+                            you know what i'm talking about. I was
+                            trying to be
+                            creative and automate things I didn't think are worth
+                            my time but had some value to it while
+                            I could do something
+                            else that couldn't be automated.</p>
+                        <p class="lead"></p>
+                    </div>
+                    <div class="col-12 col-md-6 justify-content-center align-items-center my-auto">
+                        <h2>My programming journey</h2>
+                    </div>
+                    <div class="col-12">
+                        <hr />
+                    </div>
                 </div>
-                <div id="projects" class="text-center p-4 m-1" style="border: 1px solid blue; min-height: 50vh;">
+
+
+                <div id="projects" class="text-center p-2 m-0 projects-tile" style=" min-height: 50vh;">
                     <h3>My projects</h3>
-
                 </div>
-                <div id="skills" class="text-center p-4 m-1" style="border: 1px solid green; min-height: 50vh;">
+
+
+                <div id="skills" class="text-center p-2 m-0 skills-tile" style=" min-height: 50vh;">
                     <h3>Skills</h3>
-
                 </div>
-                <div id="about" class="text-center p-4 m-1" style="border: 1px solid orangered; min-height: 90vh;">
+
+
+                <div id="about" class="text-center p-2 m-0 about-tile" style="min-height: 90vh;">
                     <h3>About me</h3>
-
                 </div>
-                <div id="contact" class="text-center p-4 m-1" style="border: 1px solid blueviolet; min-height: 90vh;">
+
+
+                <div id="contact" class="text-center p-2 m-0 contact-tile" style="min-height: 90vh;">
                     <h3>Contact</h3>
                     <div class="row justify-content-around">
                         <div class="col-md-4 col-12 m-4">
-                            <div
-                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
-                                <h1 class="bi bi-mailbox">
-                                    </h2>
-                                    <p class="lead">Send me an email</p>
-                            </div>
+                            <a href="mailto:boren.dujnic@gmail.com"
+                                class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center">
+                                <p class="lead">
+                                    <h1 class="bi bi-mailbox"></h1>Send me an email
+                                </p>
+                            </a>
                         </div>
 
                         <div class="col-md-4 col-12 m-4">
-                            <div
-                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
-                                <h1 class="bi bi-telegram">
-                                    </h2>
-                                    <p class="lead">Send telegram message</p>
-                            </div>
+                            <a href="https://telegram.me/r3nb0"
+                                class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center">
+                                <p class="lead">
+                                    <h1 class="bi bi-telegram">
+                                    </h1>Send telegram message
+                                </p>
+                            </a>
                         </div>
                         <div class="w-100"></div>
                         <div class="col-md-4 col-12 m-4">
-                            <div
-                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
-                                <h1 class="bi bi-whatsapp"></h1>
-                                <p class="lead">Send whatsapp message</p>
-                            </div>
+                            <a href="https://wa.me/+385977562925"
+                                class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center">
+                                <p class="lead">
+                                    <h1 class="bi bi-whatsapp"></h1>Send whatsapp message
+                                </p>
+                            </a>
                         </div>
                         <div class="col-md-4 col-12 m-4">
-                            <div
-                                class="card card-body bg-dark shadow shadow-sm justify-content-center align-items-center contact-tile">
-                                <h1 class="bi bi-phone"></h1>
-                                <p class="lead">Call me</p>
-                            </div>
+                            <a href="tel:+385977562925"
+                                class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center">
+                                <p class="lead">
+                                    <h1 class="bi bi-phone"></h1>Call me
+                                </p>
+                            </a>
                         </div>
                     </div>
                 </div>
