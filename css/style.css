@@ -106,8 +106,8 @@ footer {
   background: rgb(53, 133, 139);
   background: linear-gradient(
     345deg,
-    rgba(53, 133, 139, 1) 33%,
-    rgba(79, 189, 186, 1) 66%
+    rgba(79, 189, 186, 1) 33%,
+    rgba(53, 133, 139, 1) 66%
   );
   color: #333;
 }
