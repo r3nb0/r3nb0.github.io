@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+        content="This is my portfolio page which is used by employers or clients to see what i can offer them. C#, Java, HTML, CSS, Js, Angular, Android, .NETCore, MVC, Razor..." />
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <title>Boren Dujnić - Portfolio</title>
+</head>
+
+<body class="m-0 p-0 bg-dark">
+    <div class="row m-0 p-0 justify-content-around" style="min-height: 95vh;">
+        <div class="d-block d-lg-none col-12 m-0 p-0">
+            <nav id="navbar-mobile" class="px-3 py-2 bg-dark text-white sticky-top">
+                <div class="container">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                        <a href="#start"
+                            class="nav-link text-white p-auto m-auto d-flex flex-column justify-content-center">
+                            <hh3 class="bi bi-house mx-auto"></hh3>
+                            <p class="text-muted">Home</p>
+                        </a>
+                        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                            <li>
+                                <a href="#projects"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-diagram-2 mx-auto"></h3>
+                                    <p class="">Projects</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#skills"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-tools mx-auto"></h3>
+                                    <p class="">Skills</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#about"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-person mx-auto"></h3>
+                                    <p class="">About Me</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact"
+                                    class="nav-link p-auto m-auto d-flex flex-column justify-content-center my-nav-link">
+                                    <h3 class="bi bi-telephone mx-auto"></h3>
+                                    <p class="">Contact</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="d-none d-lg-block col-0 col-lg-2 h-100 m-0 p-0">
+            <nav id="navbar-desktop"
+                class="navbar navbar-dark bg-dark nav nav-pills nav-flush flex-column mb-auto text-center px-auto mx-auto"
+                style="position: fixed; left: 0px; top: 0px; height: 100vh; width: 8.33vw;">
+
+                <a href="#home" class="nav-link py-3 pb-3 px-5 m-0 my-nav-link" title="Start" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-original-title="Start">
+                    <h1 class="bi bi-house mx-auto"></h1>
+                    <span class="visually-hidden">Icon-only</span>
+
+                </a>
+                <a href="#start" class="nav-link py-3 pb-3 px-5 my-nav-link"
+                    style="border-bottom: 1px solid; border-color: rgb(53, 133, 139);" title="Start"
+                    data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Start">
+                    <h2 class="bi bi-easel mx-auto"></h2>
+                    <p class="lead">Intro</p>
+
+                </a>
+
+                <a href="#projects" class="nav-link py-3 px-5 my-nav-link" title="Project"
+                    style="border-bottom: 1px solid; border-color: rgb(53, 133, 139);" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-original-title="Project">
+                    <h2 class="bi bi-diagram-3 mx-auto"></h2>
+                    <p class="lead">Project</p>
+
+                </a>
+
+                <a href="#skills" class="nav-link py-3 px-5 my-nav-link" title="Skills"
+                    style="border-bottom: 1px solid; border-color: rgb(53, 133, 139);" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-original-title="Skills">
+                    <h2 class="bi bi-tools mx-auto"></h2>
+                    <p class="lead">Skills</p>
+                </a>
+
+                <a href="#about" class="nav-link py-3 px-5 my-nav-link" title="About me"
+                    style="border-bottom: 1px solid; border-color: rgb(53, 133, 139);" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-original-title="About me">
+                    <h2 class="bi bi-person mx-auto"></h2>
+                    <p class="lead">About me</p>
+                </a>
+                <a href="#contact" class="nav-link py-3 px-5 my-nav-link" title="Contact" data-bs-toggle="tooltip"
+                    data-bs-placement="right" data-bs-original-title="Contact">
+                    <h2 class="bi bi-telephone mx-auto"></h2>
+                    <p class="lead">Contact</p>
+                </a>
+            </nav>
+        </div>
+
+        <main class="col-12 col-lg-10 m-0 p-0 text-white shwdow shadow-sm">
+            <div class="" data-spy="scroll" data-target="#navbar-desktop" data-offset="0">
+
+                <div id="home" class="text-center p-2 m-0 row home-tile" style="min-height: 100vh;">
+                    <div class="col-12 col-md-4 justify-content-center align-items-center my-auto">
+                        <img src="/assets/me.jpg" style="border-radius: 50%; image-rendering: optimizeSpeed;"
+                            class="w-75 h-auto" alt="Boren Dujnić" />
+                    </div>
+                    <div class="col-12 col-md-8 justify-content-center align-items-center my-auto">
+                        <h2>Hi, my name is Boren, as you can already guess.</h2>
+                        <p class="lead">Welcome to my portfolio page where You will be able to look at some of my
+                            projects, see what
+                            i'm capable of and learn something about me.</p>
+                    </div>
+                </div>
+
+
+                <div id="start" class="text-center p-2 m-0 row beginning-tile" style="min-height: 55vh;">
+                    <div class="col-12 justify-content-center align-items-center my-auto">
+                        <h2>My programming journey</h2>
+                    </div>
+                    <div class="col-12 col-md-6 justify-content-center align-items-center my-auto text-start">
+                        <p class="lead mx-auto my-5 py-3">My journey has started since I was in middle school
+                            while playing minecraft. If
+                            you've ever heard of or played with "redstone",
+                            you know what i'm talking about. I was
+                            trying to be
+                            creative and automate things I didn't think are worth
+                            my time but had some value to it while
+                            I could do something
+                            else that couldn't be automated.</p>
+                        <p class="lead">
+                            I was always interested in how things work and why it works like it works.
+                            I have good understanding of software and hardware.</p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                    </div>
+                    <div class="col-12 d-md-none">
+                        <hr />
+                    </div>
+                    <div class="col-12 col-md-6">
+                    </div>
+                    <div class="col-12 col-md-6 justify-content-center align-items-center my-auto text-start">
+                        <p class="lead mx-auto my-5 py-3"> Hardware was always intriguing to me
+                            because it has a lot of phisical components and when i have learnt it all, I started to gain
+                            interest in software so i can understand how things work.
+                            Then I got tempted by hacking in movies so i started playing with Kali Linux on my local
+                            network. Next thing you know, I started to learn Visual Basic and C++.</p>
+                        <p class="lead">I'm the guy who's family and friends always call in for help with their
+                            computers, phones, networks, etc.</p>
+                    </div>
+                    <div class="col-12">
+                        <hr />
+                    </div>
+                </div>
+
+
+                <div id="projects" class="text-center p-2 m-0 projects-tile" style=" min-height: 50vh;">
+                    <h2>My projects</h2>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-white">Cascadus advanced web shop (<a
+                                    href="https://github.com/r3nb0/newAgeWebShop">Git</a>)</h4>
+                            <img src="/assets/cascadus-1.png" class="w-75 h-auto d-block my-3 mx-auto"
+                                alt="Cascadus web shop - snapshot of desktop version" />
+                        </div>
+                        <div class="col-12 col-lg-4 order-2">
+                            <img src="/assets/cascadus-gif.gif" class="w-auto h-75 d-block my-3 mx-auto"
+                                alt="Cascadus web shop - mobile version gif" />
+                        </div>
+                        <div class="col-12 col-lg-8 order-1">
+                            <div class="my-auto text-center text-md-start">
+                                <p class="lead dark-text w-75">
+                                    Cascadus web shop was my first big project where I've learnt how web
+                                    shops work, how
+                                    to
+                                    integrate and use payment solutions, why user experience is
+                                    important and how UX/UI
+                                    directly affects sales.
+                                </p>
+
+                                <div class="row pt-5 align-items-center">
+                                    <div class="col border border-dark m-2">
+                                        <p class="fw-bolder dark-text">
+                                            Backend (Web API)
+                                        </p>
+                                        <ul style="list-style: disc;">
+                                            <li>
+                                                <p>C# .NET Core 3</p>
+                                            </li>
+                                            <li>
+                                                <p>Entity framework</p>
+                                            </li>
+                                            <li>
+                                                <p>JWT Bearer (Authentication)</p>
+                                            </li>
+                                            <li>
+                                                <p>MVC</p>
+                                            </li>
+                                            <li>
+                                                <p>JSON</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col border border-dark m-2">
+                                        <p class="fw-bolder dark-text">
+                                            Frontend
+                                        </p>
+                                        <ul style="list-style: disc;">
+                                            <li>
+                                                <p>Angular 10</p>
+                                            </li>
+                                            <li>
+                                                <p>HTML 5</p>
+                                            </li>
+                                            <li>
+                                                <p>Google Analytics</p>
+                                            </li>
+                                            <li>
+                                                <p>Bootstrap</p>
+                                            </li>
+                                            <li>
+                                                <p>Material Design</p>
+                                            </li>
+                                            <li>
+                                                <p>Google Fonts & Icons</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="text-white">My Little Web Shop (<a
+                                    href="https://github.com/r3nb0/JavaWebShop">Git</a>)</h4>
+                            <img src="/assets/littleWebShop-gif.gif" class="w-75 h-auto d-block my-3 py-3 mx-auto"
+                                alt="My Little web shop - desktop version gif" />
+                        </div>
+                        <div class="col-12 col-lg-4 order-1">
+                            <img src="/assets/littleWebShop-mobile-gif.gif" class="w-auto h-75 d-block my-3 mx-auto"
+                                alt="My Little web shop - snapshot of mobile version" />
+                        </div>
+                        <div class="col-12 col-lg-8 order-2">
+                            <div class="my-auto text-center text-md-start">
+                                <p class="lead dark-text w-75">
+                                    My Little web shop was a project required for passing a course on my university. I
+                                    have to admit that Java wasn't my best friend for some thime, but with this project
+                                    I actually started to like it!
+                                </p>
+
+                                <div class="row pt-5 align-items-center">
+                                    <div class="col border border-dark m-2">
+                                        <p class="fw-bolder dark-text">
+                                            Backend (Web API)
+                                        </p>
+                                        <ul style="list-style: disc;">
+                                            <li>
+                                                <p>Java 8</p>
+                                            </li>
+                                            <li>
+                                                <p>Hibernate</p>
+                                            </li>
+                                            <li>
+                                                <p>Authentication filter (made by myself)</p>
+                                            </li>
+                                            <li>
+                                                <p>MVC</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col border border-dark m-2">
+                                        <p class="fw-bolder dark-text">
+                                            Frontend
+                                        </p>
+                                        <ul style="list-style: disc;">
+                                            <li>
+                                                <p>JSP + JSF</p>
+                                            </li>
+                                            <li>
+                                                <p>HTML 5</p>
+                                            </li>
+                                            <li>
+                                                <p>Google Analytics</p>
+                                            </li>
+                                            <li>
+                                                <p>Bootstrap</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="order-last w-100" />
+                    </div>
+                </div>
+
+
+                <div id="skills" class="text-center p-2 m-0 skills-tile" style="min-height: 50vh;">
+                    <h3>Skills</h3>
+                    <div class="row">
+                        <ul class="col-12 col-md-6" style="list-style: none;">
+                            <li>
+                                <p class="lead">Lots of experience with object-oriented languages</p>
+                            </li>
+                            <li>
+                                <p class="lead">Good knowledge of current programming concepts</p>
+                            </li>
+                            <li>
+                                <p class="lead">Solid experience with planning projects and understanding of agile
+                                    metodologies</p>
+                            </li>
+                            <li>
+                                <p class="lead">C# .NET, .NET Core, Windows Forms, WPF</p>
+                            </li>
+                            <li>
+                                <p class="lead">HTML, JS, JQuery, TypeScript</p>
+                            </li>
+                            <li>
+                                <p class="lead">Angular</p>
+                            </li>
+                        </ul>
+
+                        <ul class="col-12 col-md-6" style="list-style: none;">
+                            <li>
+                                <p class="lead">Good understanding how IT systems and IT services work</p>
+                            </li>
+                            <li>
+                                <p class="lead">MS SQL (design, data access and administration)</p>
+                            </li>
+                            <li>
+                                <p class="lead">Version control systems (Git)</p>
+                            </li>
+                            <li>
+                                <p class="lead">Java EE, Swing, JavaFX, Android</p>
+                            </li>
+                            <li>
+                                <p class="lead">Arduino</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" class="text-center p-2 m-0 about-tile" style="min-height: 35vh;">
+                <h3>About me</h3>
+                <p class="px-5">
+                    An ambicious young individual, willing to learn and grow it's potential.
+                    Resourceful in any situation, even under great pressure.
+                    I like being outdoors, absolutely love animals, technology, motorsports, electronics & mechanics..
+                    Highschool: Veterinary school in Zagreb
+                    Collage: Algebra University
+                </p>
+            </div>
+
+
+            <div id="contact" class="text-center px-2 py-5 m-0 contact-tile" style="min-height: 90vh; height: auto;">
+                <h3>Contact</h3>
+                <div class="row justify-content-around">
+                    <div class="col-md-4 col-12 m-4">
+                        <a href="mailto:boren.dujnic@gmail.com?subject=Job enquiry"
+                            class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center m-3">
+                            <p class="lead">
+                                <h1 class="bi bi-mailbox"></h1>Send me an email
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-12 m-4">
+                        <a href="https://telegram.me/r3nb0"
+                            class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center m-3">
+                            <p class="lead">
+                                <h1 class="bi bi-telegram"></h1>Send telegram message
+                            </p>
+                        </a>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-md-4 col-12 m-4">
+                        <a href="https://wa.me/+385977562925"
+                            class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center m-3">
+                            <p class="lead">
+                                <h1 class="bi bi-whatsapp"></h1>Send whatsapp message
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-12 m-4">
+                        <a href="tel:+385977562925"
+                            class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center m-3">
+                            <p class="lead">
+                                <h1 class="bi bi-phone"></h1>Call me
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="col-12">
+                        <hr />
+                    </div>
+
+                    <div class="col-12 col-md-4 offset-md-4 m-4">
+                        <a href="https://drive.google.com/file/d/1fij2Qcg_TsyKC6wPTpWjmVUyANr-0gsD/view?usp=sharing"
+                            class="tile-link card card-body bg-dark shadow shadow-sm justify-content-center align-items-center m-3">
+                            <p class="lead">
+                                <h1 class="bi bi-download"></h1>CV download
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+    </div>
+
+
+    <button onclick="topFunction()" id="scrollToTopBtn" class="toTop show fade">
+        <b class="bi bi-arrow-bar-up"></b>
+    </button>
+
+    <footer class="w-100 bg-dark text-center m-0 p-0 bottom-0">
+        <p class="bottom-0 text-muted my-auto py-1">Made with
+            <i class="bi bi-heart mx-auto" style="color: red;"></i>
+            by Boren
+        </p>
+    </footer>
+
+    <script>
+        mybutton = document.getElementById("scrollToTopBtn");
+
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+
+</html>

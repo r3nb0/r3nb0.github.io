@@ -1,0 +1,142 @@
+content {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+hr {
+  color: #333;
+  border-bottom: 2px solid #333;
+}
+
+.toTop {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 99;
+  font-size: 2rem;
+  background-color: #072227;
+  color: #35858b;
+  cursor: pointer;
+  border: 1px solid #4fbdba;
+  border-radius: 50px;
+
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+.toTop :hover {
+  color: #4fbdba;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.my-nav-link {
+  color: #aaa !important;
+}
+.my-nav-link :hover {
+  color: #fefefe !important;
+}
+.scrollable {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.no-scroll {
+  overflow: hidden;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #333;
+}
+.contact-tile {
+  height: 500px;
+}
+
+.home-tile {
+  background: rgb(7, 34, 39);
+  background: linear-gradient(
+    350deg,
+    rgba(7, 34, 39, 1) 33%,
+    rgba(53, 133, 139, 1) 66%
+  );
+}
+.beginning-tile {
+  background: rgb(53, 133, 139);
+  background: linear-gradient(
+    170deg,
+    rgba(7, 34, 39, 1) 33%,
+    rgba(53, 133, 139, 1) 66%
+  );
+}
+
+.projects-tile {
+  background: rgb(53, 133, 139);
+  background: linear-gradient(
+    345deg,
+    rgba(79, 189, 186, 1) 33%,
+    rgba(53, 133, 139, 1) 66%
+  );
+  color: #333;
+}
+
+.skills-tile {
+  background: rgb(53, 133, 139);
+  background: linear-gradient(
+    345deg,
+    rgba(53, 133, 139, 1) 33%,
+    rgba(79, 189, 186, 1) 66%
+  );
+  color: #333;
+}
+
+.about-tile {
+  background: rgb(53, 133, 139);
+  background: linear-gradient(
+    345deg,
+    rgba(79, 189, 186, 1) 33%,
+    rgba(53, 133, 139, 1) 66%
+  );
+  color: #333;
+}
+
+.contact-tile {
+  background: rgb(53, 133, 139);
+  background: linear-gradient(
+    345deg,
+    rgba(53, 133, 139, 1) 33%,
+    rgba(79, 189, 186, 1) 66%
+  );
+  color: #333;
+}
+
+.tile-link {
+  color: rgb(53, 133, 139);
+  text-decoration: none;
+}
+
+.tile-link :link {
+  color: rgb(53, 133, 139);
+  text-decoration: none;
+}
+.tile-link :link:active {
+  color: rgb(79, 189, 186);
+  text-decoration: none;
+}
+
+.tile-link :hover {
+  color: rgb(79, 189, 186);
+  text-decoration: none;
+}
